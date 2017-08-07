@@ -1,0 +1,15 @@
+
+'''
+Sum of even fibonacci numbers till 4 million 
+'''
+
+import math
+
+if __name__ == "__main__":
+    a, b = 1, 1
+    total = 0
+    while a <= 4000000:
+        if a % 2 == 0:
+            total += a
+        a, b = b, a+b  # the real formula for Fibonacci sequence
+print(total)
